@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
+            
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+            
+              "src/app/layout/menu-principal/funcionJS.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
