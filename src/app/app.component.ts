@@ -10,6 +10,12 @@ import { Observable, of as observableOf, merge } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
 
 
+export class AppComponent implements OnInit {
+  title = 'app';
+  options = {fullWidth: true,
+  indicators: true};
+
+  ngOnInit() {}
+}
