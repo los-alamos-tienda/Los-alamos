@@ -17,7 +17,7 @@ const EXAMPLE_DATA: ListaDatosItem[] = [
   {id: 2, producto: 'Traje de bano', genero: 'Femenino', cantidad: 20},
   {id: 3, producto: 'Gorras speedo', genero: 'Masculino', cantidad: 34},
   {id: 4, producto: 'Gorras speedo', genero: 'Femenino', cantidad: 16},
-  {id: 5, producto: 'Lentes speedo', genero: '-', cantidad: 10},
+  {id: 5, producto: 'Lentes speedo', genero: 'No hay', cantidad: 10},
   {id: 6, producto: 'Lentes de aumento', genero: 'No hay', cantidad: 4},
   {id: 7, producto: 'Gorras personalizadas', genero: 'No hay', cantidad: 31},
   {id: 8, producto: 'Mallas fasqui', genero: 'Masculino', cantidad: 21},
