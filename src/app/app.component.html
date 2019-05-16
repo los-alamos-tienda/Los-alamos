@@ -1,6 +1,10 @@
 <iso-navbar></iso-navbar>
 <main>
 
+    <li class="text" *ngFor="let item of items | async">
+        {{item.name}}
+    </li>
+    
     <nav>
         <a routerLink = "/lista">Lista</a>
     </nav>

@@ -3,7 +3,7 @@ import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
-
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'iso-root',
@@ -16,6 +16,10 @@ export class AppComponent implements OnInit {
   title = 'app';
   options = {fullWidth: true,
   indicators: true};
+  items: Observable<any[]>;
 
+  constructor(db: AngularFirestore) {
+    this.items = db.collection('items').valueChanges();
+  }
   ngOnInit() {}
 }
