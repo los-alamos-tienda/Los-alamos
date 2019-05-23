@@ -1,25 +1,24 @@
 <header>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <div class="container">
-          <a routerLink="/">ISO</a>
-          <a data-target="mobile-menu" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a routerLink="/">Tienda</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+    <nav class="nav-extended" style="background-color:#01579b">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">LOS ALAMOS</a>
+            <ul class="right hide-on-med-and-down">
 
-  <ul isoSidenav class="sidenav" id="mobile-menu">
-    <li>
-      <a routerLink="/" class="sidenav-close">Tienda</a>
-    </li>
-  </ul>
+                <li class="nav-item" *ngIf="!isLogged">
+                    <a class="nav-link" routerLink="/user/login">Login </a>
+                </li>
+                <li class="nav-item" *ngIf="!isLogged">
+                    <a class="nav-link" routerLink="/user/register">Register</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="nav-content">
+
+
+        </div>
+        <iso-menu-principal></iso-menu-principal>
+    </nav>
+
 </header>
