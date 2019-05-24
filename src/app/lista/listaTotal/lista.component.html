@@ -1,0 +1,42 @@
+
+<table class='striped,responsive-table' *ngIf = "productos?.length > 0 else noProductos">  
+
+  <thead class='highlight'>
+
+    <tr>
+        <th>Producto</th>
+        <th>Genero</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Edad</th>
+        <th>Fecha registrada</th>
+        <th>Talla</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Imagen</th>
+    </tr>
+
+  </thead>
+
+  <tbody *ngFor = "let producto of productos"> 
+
+      <tr class = "collection">
+          <td class = "collection-item">{{ producto.tipo_producto }}</td>
+          <td class = "collection-item">{{ producto.sexo }}</td>
+          <td class = "collection-item">{{ producto.cantidad }}</td>
+          <td class = "collection-item">{{ producto.precio }}</td>
+          <td class = "collection-item">{{ producto.sector_edad }}</td>
+          <td class = "collection-item">{{ producto.fecha }}</td>
+          <td class = "collection-item">{{ producto.talla }}</td>
+          <td class = "collection-item">{{ producto.nombre }}</td>
+          <td class = "collection-item">{{ producto.descripcion }}</td>
+          <td class = "collection-item"><img class = 'responsive'[src] = "producto.imagen"></td>
+      </tr>
+
+  </tbody>
+</table>
+
+<ng-template #noProductos>
+  <hr>
+  <h5>Los productos no se encuentran disponibles.</h5>
+</ng-template>

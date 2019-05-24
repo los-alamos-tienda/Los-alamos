@@ -21,5 +21,6 @@ export class AppComponent implements OnInit {
   constructor(db: AngularFirestore) {
     this.items = db.collection('items').valueChanges();
   }
+  
   ngOnInit() {}
 }
