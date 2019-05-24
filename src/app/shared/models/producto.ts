@@ -3,8 +3,8 @@ import { Timestamp } from 'rxjs';
 export interface Producto {
     cantidad : number;
     descripcion : string;
-    fecha: String;
-    id : string;
+    fecha: number;
+    idProducto : string;
     imagen: string;
     nombre : string;
     precio: number;
