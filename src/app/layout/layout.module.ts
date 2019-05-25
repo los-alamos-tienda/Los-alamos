@@ -9,10 +9,13 @@ import { CaruselComponent} from './carusel/carusel.component';
 import { CuadroInformacionComponent } from './cuadro-informacion/cuadro-informacion.component';
 import { from } from 'rxjs';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
 
 
 @NgModule({
-  declarations: [NavbarComponent, FooterComponent, SidenavDirective, CaruselComponent, CuadroInformacionComponent, MenuPrincipalComponent],
+  declarations: [NavbarComponent, FooterComponent, SidenavDirective, CaruselComponent,
+     CuadroInformacionComponent, MenuPrincipalComponent, LoginComponent, RegisterComponent],
   imports: [CommonModule, RouterModule],
   exports: [NavbarComponent, FooterComponent, CaruselComponent]
 })
