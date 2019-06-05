@@ -1,16 +1,16 @@
 import { Timestamp } from 'rxjs';
 
 export interface Producto {
-    cantidad : number;
-    descripcion : string;
-    fecha: String;
-    id : string;
+    cantidad: number;
+    descripcion: string;
+    fecha: string;
+    id_producto: string;
     imagen: string;
-    nombre : string;
+    nombre: string;
     precio: number;
-    sectorEdad: string;
+    sector_edad: string;
     sexo: string;
     talla: string;
-    tipoProducto : string;
+    tipo_producto: string;
 
 }

@@ -1,0 +1,19 @@
+table{
+    table-layout: fixed;
+    width:93%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 80px;
+    
+     
+}
+
+/* 
+th, td {
+    border: 1px  black;
+    width: 10%;
+    word-wrap: break-word;
+}  */
+i{
+    float: left;
+}
