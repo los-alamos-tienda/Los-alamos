@@ -10,13 +10,14 @@ import { environment } from './../environments/environment';
 import { AngularFireModule} from '@angular/fire';
 import { AngularFireDatabaseModule} from '@angular/fire/database';
 import { AngularFireAuth} from '@angular/fire/auth';
+import { VisualizarComponent } from './visualizar/visualizar.component';
 
 
 
 
 
 @NgModule({
-  declarations: [AppComponent, ],
+  declarations: [AppComponent, VisualizarComponent, ],
   imports: [BrowserModule, AppRoutingModule, LayoutModule,
   AngularFireModule.initializeApp(environment.firebase),
   AngularFireDatabaseModule],
