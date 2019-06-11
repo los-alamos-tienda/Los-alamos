@@ -9,12 +9,23 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import { TablaProductosComponent } from './tabla-productos/tabla-productos.component';
 import {FormsModule} from '@angular/forms';
+import { FilterComponent } from './filter/filter.component';
+import { FilterPipe } from './pipe/filter.pipe';
 @NgModule({
-  declarations: [CatalogComponent,RegistroProductoComponent, TablaProductosComponent],
+  declarations: [
+    CatalogComponent,
+    RegistroProductoComponent,
+     TablaProductosComponent,
+      FilterComponent,
+      FilterPipe
+    ],
   imports: [
     CommonModule,
     StoreRoutingModule,
-    AngularFireModule,AngularFireStorageModule,AngularFirestoreModule,FormsModule
+    AngularFireModule,
+    AngularFireStorageModule,
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [ProductosService]
 })

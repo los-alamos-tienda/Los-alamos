@@ -1,71 +1,63 @@
 <div *ngIf="productos?.length > 0 ;else noProductos">
 
-    <div class="container">
-        <div class="row">
-            Busqueda:
 
-            <br>
-            <input type="text" ng-model="busqueda" class="form-control" placeholder="Ingrese Busqueda">
-            <br>
-        </div>
+    <table class="highlight  responsive-table card-panel">
+        <thead>
+            <tr>
 
-        <table class="highlight  responsive-table card-panel">
-            <thead>
-                <tr>
+                <th scope="row">IDPRODUCTO</th>
 
-                    <th scope="row">IDPRODUCTO</th>
+                <th>NOMBRE</th>
 
-                    <th>NOMBRE</th>
-
-                    <th>TIPO PRODUCTO</th>
+                <th>TIPO PRODUCTO</th>
 
 
-                    <th>IMAGEN</th>
-                    <th>CANTIDAD</th>
-                    <th>PRECIO</th>
-                    <th>SEXO</th>
-                    <th>SECTOR EDAD</th>
-                    <th>TALLA</th>
-                    <th>DESCRIPCION</th>
-                    <th></th>
-                </tr>
-            </thead>
+                <th>IMAGEN</th>
+                <th>CANTIDAD</th>
+                <th>PRECIO</th>
+                <th>SEXO</th>
+                <th>SECTOR EDAD</th>
+                <th>TALLA</th>
+                <th>DESCRIPCION</th>
+                <th></th>
+            </tr>
+        </thead>
 
-            <tbody>
-                <tr *ngFor=" let producto of productos">
-                    <td>{{producto.id_producto}}</td>
+        <tbody>
+            <tr *ngFor=" let producto of productos">
+                <td>{{producto.id_producto}}</td>
 
-                    <td>{{producto.nombre}}</td>
+                <td>{{producto.nombre}}</td>
 
-                    <td>{{producto.tipoProducto}}</td>
-                    <!-- <td>{{producto.fecha}}</td> -->
-                    <td>
-                        <img width="60" [src]="producto.imagen">
+                <td>{{producto.tipoProducto}}</td>
+                <!-- <td>{{producto.fecha}}</td> -->
+                <td>
+                    <img width="60" [src]="producto.imagen">
 
-                    </td>
-                    <td>{{producto.cantidad}}</td>
-                    <td>{{producto.precio}}</td>
-                    <td>{{producto.sexo}}</td>
-                    <td> {{producto.sectorEdad}}</td>
-                    <td>{{producto.talla}}</td>
-                    <td> {{producto.descripcion}}</td>
-                    <!-- <td>
-          <a class="secondary-content">
-          <i *ngIf="editState == false" (click) = "editProducto($event, producto)"class="material-icons">mode_edit</i>
-          <i  *ngIf="editState && productoToEdit.id == producto.id"  (click) = "clearState()" class="material-icons">close</i> -->
-                    <!-- <button >Editar</button> -->
-                </tr>
-                <tr>
-                    <div class="container-updateProducto">
+                </td>
+                <td>{{producto.cantidad}}</td>
+                <td>{{producto.precio}}</td>
+                <td>{{producto.sexo}}</td>
+                <td> {{producto.sectorEdad}}</td>
+                <td>{{producto.talla}}</td>
+                <td> {{producto.descripcion}}</td>
+              
+            </tr>
+            <tr>
+                <div class="container-updateProducto">
 
-                        update
+                    update
 
-                    </div>
+                </div>
 
-                </tr>
+            </tr>
 
-            </tbody>
-        </table>
-    </div>
+        </tbody>
+
+
+
+    </table>
+
+
 
 </div>

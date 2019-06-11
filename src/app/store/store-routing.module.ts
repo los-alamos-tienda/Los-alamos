@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CatalogComponent } from './catalog/catalog.component';
 import { RegistroProductoComponent } from './registro-producto/registro-producto.component';
+import { FilterComponent } from './filter/filter.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,11 @@ const routes: Routes = [
   {
     path: 'registro',
     component : RegistroProductoComponent
-  }
+  },
+  {
+    path: 'filter',
+    component : FilterComponent
+  },
 ];
 
 @NgModule({
