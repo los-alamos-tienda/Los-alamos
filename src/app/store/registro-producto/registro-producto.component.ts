@@ -65,6 +65,4 @@ export class RegistroProductoComponent implements OnInit {
     var elemsSexo = document.querySelectorAll('select');
     var instancesSexo = M.FormSelect.init(elemsSexo);
   }
-  
-
 }
