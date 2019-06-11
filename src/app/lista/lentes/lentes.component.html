@@ -13,6 +13,7 @@
             <th>Nombre</th>
             <th>Descripcion</th>
             <th>Imagen</th>
+            <th>Compra</th>
         </tr>
 
     </thead>
@@ -30,6 +31,7 @@
             <td class="collection-item">{{ producto.nombre }}</td>
             <td class="collection-item">{{ producto.descripcion }}</td>
             <td class="collection-item"><img class='responsive' [src]="producto.imagen"></td>
+            <a (click)="getProducto($evento,producto)" routerLink="/carrito/visualizar">carrito</a>
         </tr>
 
     </tbody>

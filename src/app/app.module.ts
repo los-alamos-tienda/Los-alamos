@@ -20,7 +20,7 @@ import { AngularFireAuth} from '@angular/fire/auth';
   imports: [BrowserModule, AppRoutingModule, LayoutModule,
   AngularFireModule.initializeApp(environment.firebase),
   AngularFireDatabaseModule],
-  providers: [AngularFireAuth, AngularFirestore],
+  providers: [AngularFireAuth,AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

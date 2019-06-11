@@ -26,6 +26,10 @@ export class ProductosService {
     return this.productos;
     
   }
+  //addProductoCarrito(this.producto){
+   // this.productosCollection.add(producto);
+    //console.log('New Product');
+  //}
     
 }
 
