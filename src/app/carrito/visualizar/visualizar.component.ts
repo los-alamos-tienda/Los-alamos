@@ -10,17 +10,17 @@ export class VisualizarComponent {
   constructor(){
 
     this.grabar_localstorage();
-   // this.obtener_localstorage();
+    this.obtener_localstorage();
   }
 
 
-  // obtener_localstorage(){
+  obtener_localstorage(){
 
   
-  //  let producto=localStorage.getItem("producto");
-  //   // console.log(producto);
+    let producto=localStorage.getItem("producto");
+     console.log(producto);
 
-  // }
+   }
 
 
   grabar_localstorage(){
