@@ -27,9 +27,6 @@ productosCollection: AngularFirestoreCollection<Producto>;
     );
   }
 
-  // getProductos(): Observable <Producto []> {
-  //   return this.db.collection<Producto>('productos').valueChanges();
-  // }
   getProductos(){
     return this.productos;
     
@@ -45,5 +42,9 @@ productosCollection: AngularFirestoreCollection<Producto>;
     console.log('Update  Product');
   }
  
+  getContactosFiltro(filtro: string){
+
+    return "";
+  }
  
 }

@@ -1,0 +1,9 @@
+.card_login {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.form-control.login {
+  border: 0 solid #fff !important;
+}

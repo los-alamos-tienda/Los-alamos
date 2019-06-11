@@ -1,0 +1,47 @@
+<div class="container">
+  <h1>Listado de todos los productos</h1>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <input type = "text" class="form-control" name="filterPro" placeholder="Buscar..." [(ngModel)]
+        ="filterPro">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="row">IDPRODUCTO</th>
+            <th>NOMBRE</th>
+            <th>TIPO PRODUCTO</th>
+            <th>IMAGEN</th>
+            <th>CANTIDAD</th>
+            <th>PRECIO</th>
+            <th>SEXO</th>
+            <th>SECTOR EDAD</th>
+            <th>TALLA</th>
+            <th>DESCRIPCION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pro of productos | filter:filterPro">
+            <td>{{pro.id_producto}}</td>
+            <td>{{pro.nombre}}</td>
+            <td>{{pro.tipoProducto}}</td>
+            <td>
+              <img width="60" [src]="pro.imagen">
+            </td>
+            <td>{{pro.cantidad}}</td>
+            <td>{{pro.precio}}</td>
+            <td>{{pro.sexo}}</td>
+            <td>{{pro.sectorEdad}}</td>
+            <td>{{pro.talla}}</td>
+            <td>{{pro.descripcion}}</td>      
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
