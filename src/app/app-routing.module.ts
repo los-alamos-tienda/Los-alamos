@@ -8,6 +8,7 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomeModule'
   },
+
   // {
   //   path: 'user',
   //   loadChildren: './user/user.module#UserModule'
@@ -20,6 +21,7 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent
   },
+
   {
     path: 'store',
     loadChildren: './store/store.module#StoreModule'

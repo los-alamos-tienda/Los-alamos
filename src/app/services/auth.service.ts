@@ -1,3 +1,4 @@
+
 //import { UserModule } from './../user/user.module';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Injectable } from '@angular/core';
@@ -9,9 +10,11 @@ import * as firebase from 'firebase';
 
 
 
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService
   { user : User ;
     loginFailed = new BehaviorSubject<boolean>(false);
@@ -104,5 +107,6 @@ export class AuthService
 //   // tslint:disable-next-line:no-shadowed-variable
 //   return this.afsAuth.authState.pipe(map(auth => auth));
 // }
+
 
 }

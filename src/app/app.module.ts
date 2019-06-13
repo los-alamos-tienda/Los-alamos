@@ -1,3 +1,4 @@
+
 import { UserService } from './services/user.service';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
@@ -26,8 +27,10 @@ import { AngularFireAuth} from '@angular/fire/auth';
   declarations: [AppComponent, ],
   imports: [BrowserModule, AppRoutingModule, LayoutModule,
   AngularFireModule.initializeApp(environment.firebase),
+
   AngularFireDatabaseModule, LoginModule, RegisterModule, CommonModule],
   providers: [AngularFireAuth, AngularFirestore, UserService, AuthGuardService, AuthService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule {}
